@@ -50,14 +50,7 @@ This project is a real-world agentic backend pipeline that processes medical ins
 5.  **Test the endpoint:**
     Use the built-in FastAPI documentation at `http://127.0.0.1:8000/docs` to upload a multi-page PDF and test the `/process-claim` endpoint.
 
-## Mock AI Service (Demo Mode)
 
-For demonstration, the AI logic is simulated in `app/services.py`:
-- **Classification**: Uses keyword and pattern matching to determine document type.
-- **Extraction**: Uses regex to extract fields like patient name, amount, diagnosis, dates, etc., from the text.
-- **Validation**: Checks for required documents and data consistency.
-
-This allows you to demo the full workflow without any external dependencies or API rate limits.
 
 ## Example Output
 
@@ -107,10 +100,3 @@ A successful response from `/process-claim` looks like:
 - Easily extendable for real AI integration.
 - Robust error handling and clear, structured API responses.
 
-## Contributing
-
-Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
-
-## License
-
-[MIT](LICENSE) 
